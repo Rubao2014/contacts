@@ -2,7 +2,7 @@
 lock '3.5.0'
 
 set :application, 'contacts'
-set :repo_url, 'git@github.com:devdatta/contactbook.git' # Edit this to match your repository
+set :repo_url, 'git@github.com:Rubao2014/contacts.git' # Edit this to match your repository
 set :branch, :master
 set :deploy_to, '/home/deploy/contacts'
 set :pty, true
