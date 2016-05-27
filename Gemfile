@@ -58,3 +58,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#LDAP
+#gem 'net-ldap', '~> 0.14.0'
+gem 'devise', '~> 4.1', '>= 4.1.1'
+gem 'devise_ldap_authenticatable', '~> 0.8.5'
+
