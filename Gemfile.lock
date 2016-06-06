@@ -83,6 +83,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (0.0.8)
     devise_ldap_authenticatable (0.8.5)
       devise (>= 3.4.1)
       net-ldap (>= 0.6.0, <= 0.11)
@@ -162,6 +163,7 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    spring (1.7.1)
     sprockets (3.6.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -202,6 +204,7 @@ DEPENDENCIES
   capistrano3-puma
   coffee-script-source (= 1.8.0)
   devise (~> 4.1, >= 4.1.1)
+  devise-bootstrap-views
   devise_ldap_authenticatable (~> 0.8.5)
   figaro
   jbuilder (~> 2.0)
@@ -211,6 +214,7 @@ DEPENDENCIES
   rails (= 4.2.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  spring
   turbolinks
   tzinfo-data
   uglifier (>= 1.3.0)

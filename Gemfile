@@ -43,6 +43,7 @@ gem 'puma'
 
 
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'devise-bootstrap-views'
 
 
 
@@ -58,6 +59,8 @@ group :development, :test do
   gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rvm'
+
+  gem 'spring'
   
 end
 

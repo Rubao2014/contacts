@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contacts</title> 
+  <title>Contacts</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<div class="container-narrow">
-  <div class="masthead">
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <%= image_tag('bootstrap.png',size: "25") %>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <%= render 'layouts/user_header' %>
-    <h3 class="muted"><%= link_to "GPM", root_path %></h3>
-    <h5 class="muted">Devise</h5>
+    </div>
   </div>
-  <hr />
-  <%= yield %>
-
-<%= render 'devise/shared/logout' %>
-
+</nav>
+<%= flash_messages %>
+<div class="col-md-offset-2 col-md-8">
+<%= yield %>
+</div>
 </body>
 </html>
