@@ -1,6 +1,4 @@
-load 'deploy'
-load 'deploy/assets'
-load 'config/deploy'
+
 
 # Load DSL and set up stages
 require "capistrano/setup"
