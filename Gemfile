@@ -41,6 +41,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro'
 gem 'puma'
 
+
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'devise-bootstrap-views'
+
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -53,6 +59,8 @@ group :development, :test do
   gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rvm'
+
+  gem 'spring'
   
 end
 
@@ -63,4 +71,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #gem 'net-ldap', '~> 0.14.0'
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'devise_ldap_authenticatable', '~> 0.8.5'
+
+gem 'aws-ses', '~> 0.6.0', require: 'aws/ses'
 
