@@ -87,7 +87,7 @@ Rails.application.configure do
   host = 'localhost'
   ActionMailer::Base.default charset: "utf-8"
   
-  config.action_mailer.default_url_options = { host: gpmonline.com.br, port: 80 }  #config.action_mailer.default_url_options = { host: localhost, port: 3000 }
+  config.action_mailer.default_url_options = { host: "gateway.gpmonline.com.br", port: 80 }  #config.action_mailer.default_url_options = { host: localhost, port: 3000 }
 
   config.action_mailer.smtp_settings= {  
    :address => "br148.hostgator.com.br",
