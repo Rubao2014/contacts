@@ -76,4 +76,28 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Raises error for missing translations
+  # config.action_view.raise_on_missing_translations = true
+
+  #Needed for devise
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  host = 'localhost'
+  ActionMailer::Base.default charset: "utf-8"
+  
+  config.action_mailer.default_url_options = { host: gpmonline.com.br, port: 80 }  #config.action_mailer.default_url_options = { host: localhost, port: 3000 }
+
+  config.action_mailer.smtp_settings= {  
+   :address => "br148.hostgator.com.br",
+   :authentication => :login,
+   :user_name => ENV['MAILER_ACCOUNT'],
+   :password => ENV['MAILER_PASSWORD'],
+   :enable_starttls_auto => true,
+   :port => 465,
+   :tls => true 
+  }
+
+
 end

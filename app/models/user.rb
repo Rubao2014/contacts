@@ -33,7 +33,7 @@ class User < ActiveRecord::Base
 	def update_ldap_password
 
 		if(password.present? && password_confirmation.present?)
-			dn = "#{self.email},OU=User,DC=gpmonline,DC=br"
+			#dn = "#{self.email},OU=User,DC=gpmonline,DC=br"
 			#attrs = { userPassword: self.password}
 			#ldap = Devise::LDAP::Connection.admin
 			ldap = Devise::LDAP::Adapter.update_password(self.email, password_confirmation)
