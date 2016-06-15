@@ -39,8 +39,6 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  config.assets.prefix = '/assets'
-
   #Needed for devise
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_deliveries = true
@@ -53,8 +51,9 @@ Rails.application.configure do
   config.action_mailer.smtp_settings= {  
    :address => "br148.hostgator.com.br",
    :authentication => :login,
-   :user_name => ENV['MAILER_ACCOUNT'],
-   :password => ENV['MAILER_PASSWORD'],
+   :domain               => 'gpmonline.com.br',
+   :user_name => 'mailer@gpmonline.com.br',
+   :password => 'Felipe0804',
    :enable_starttls_auto => true,
    :port => 465,
    :tls => true 

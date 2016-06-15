@@ -33,13 +33,14 @@ development:
   # <<: *AUTHORIZATIONS
 
 test:
-  host: localhost
-  port: 3389
+  host: gateway.gpmonline.com.br
+  port: 10389
   attribute: cn
-  base: ou=people,dc=test,dc=com
-  admin_user: cn=admin,dc=test,dc=com
-  admin_password: admin_password
-  ssl: simple_tls
+  base: ou=User,dc=gpmonline,dc=br
+  admin_user: cn=admin,dc=gpmonline,dc=br
+  admin_password: welcome1
+  #admin_password
+  ssl: false
   # <<: *AUTHORIZATIONS
 
 production:
@@ -47,7 +48,8 @@ production:
   port: 10389
   attribute: cn
   base: ou=User,dc=gpmonline,dc=br
-  admin_user: cn=admin,dc=test,dc=com
-  admin_password: admin_password
-  ssl: start_tls
+  admin_user: cn=admin,dc=gpmonline,dc=br
+  admin_password: welcome1
+  #admin_password
+  ssl: false
   # <<: *AUTHORIZATIONS

@@ -15,7 +15,7 @@ pt-BR:
       not_found_in_database: "%{authentication_keys} ou senha invalido(s)."
       timeout: Sua sessao expirou. Por favor entre novamente.
       unauthenticated: Voce deve se logar ou se cadastrar antes de entrar.
-      unconfirmed: Voce deveconfirmar a sua conta antes de continuar.
+      unconfirmed: Voce deve confirmar a sua conta antes de continuar.
     mailer:
       confirmation_instructions:
         action: Confirmar minha conta
@@ -27,7 +27,7 @@ pt-BR:
         greeting: "Olá %{recipient}!"
         instruction: Alguém fez o pedido para redefinir sua senha, e você pode fazer isso clicando no link abaixo.
         instruction_2: Se você não fez este pedido, por favor ignore este e-mail.
-        instruction_3: Sua senha não será alterada até que você acesse o link abaixo e crie uma nova.
+        instruction_3: Sua senha não será alterada até que você acesse o link e crie uma nova.
         subject: Instruções para redefinição da senha
       unlock_instructions:
         action: Desbloquear minha conta
@@ -83,3 +83,5 @@ pt-BR:
       not_saved:
         one: "Um erro esta impedindo este recurso de ser salvo. Vide \"%{resource}\": "
         other: "%{count} erros impediram este recurso de ser salvo. Vide \"%{resource}\": "
+
+
