@@ -56,6 +56,8 @@ pt-BR:
         we_need_your_current_password_to_confirm_your_changes: precisamos da sua senha atual para confirmar suas mudanças
       new:
         sign_up: Inscrever-se
+      user:
+        signed_up_but_unconfirmed: Excelente, conta criado com sucesso! Falta validar seu e-mail de confirmação %{recipient}!
     sessions:
       new:
         sign_in: Login

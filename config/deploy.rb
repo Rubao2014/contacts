@@ -80,7 +80,7 @@ namespace :deploy do
     end
   end
 
-  after "deploy", "deploy:create_db"
+  #after "deploy", "deploy:create_db"
   #after "deploy", "deploy:migrate"
   #after "finishing", "deploy:restart"
 end
