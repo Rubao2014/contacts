@@ -73,14 +73,16 @@ namespace :deploy do
     end
   end
 
-end
 
-namespace :rake do
-  desc "Invoke rake task"
-  task :invoke do
-    run "cd #{deploy_to}/current"
-    run "bundle exec rake #{ENV['task']} RAILS_ENV=#{rails_env}"
+  task :create_db do
+    on roles(:web) do
+      execute "cd #{deploy_to}/current; bundle exec rake db:migrate:reset RAILS_ENV=#{rails_env}"
+    end
   end
+
+  after "deploy", "deploy:create_db"
+  #after "deploy", "deploy:migrate"
+  #after "finishing", "deploy:restart"
 end
 
 
