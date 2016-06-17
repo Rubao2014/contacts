@@ -57,7 +57,7 @@ pt-BR:
       new:
         sign_up: Inscrever-se
       user:
-        signed_up_but_unconfirmed: "Excelente, conta criado com sucesso! Falta validar seu e-mail de confirmação %{recipient}!"
+        signed_up_but_unconfirmed: Boas noticias, conta criada com sucesso! Falta validar seu e-mail de confirmação.
     sessions:
       new:
         sign_in: Login
