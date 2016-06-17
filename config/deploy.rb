@@ -76,7 +76,7 @@ namespace :deploy do
 
   task :create_db do
     on roles(:web) do
-      execute "cd #{deploy_to}/current; bundle exec rake db:migrate:reset RAILS_ENV=#{rails_env}"
+      execute "cd #{deploy_to}/current; bundle exec rake db:migrate:reset RAILS_ENV=production"
     end
   end
 
