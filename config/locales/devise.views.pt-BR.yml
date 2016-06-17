@@ -19,7 +19,7 @@ pt-BR:
     mailer:
       confirmation_instructions:
         action: Confirmar minha conta
-        greeting: Bem-vindo %{recipient}!
+        greeting: "Bem-vindo %{recipient}!"
         instruction: ! 'Você pode confirmar sua conta através do link abaixo:'
         subject: Instruções de confirmação
       reset_password_instructions:
@@ -57,7 +57,7 @@ pt-BR:
       new:
         sign_up: Inscrever-se
       user:
-        signed_up_but_unconfirmed: Excelente, conta criado com sucesso! Falta validar seu e-mail de confirmação %{recipient}!
+        signed_up_but_unconfirmed: "Excelente, conta criado com sucesso! Falta validar seu e-mail de confirmação %{recipient}!"
     sessions:
       new:
         sign_in: Login
@@ -70,7 +70,7 @@ pt-BR:
         didn_t_receive_unlock_instructions: Não recebeu instruções de desbloqueio?
         forgot_your_password: Esqueceu sua senha?
         sign_in: Login
-        sign_in_with_provider: Entrar com %{provider}
+        sign_in_with_provider: "Entrar com %{provider}"
         sign_up: Inscrever-se
     unlocks:
       new:
