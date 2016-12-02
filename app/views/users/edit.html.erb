@@ -1,0 +1,87 @@
+
+<div class="panel panel-default devise-bs">
+  <div class="panel-heading">
+    <h4><%= t('.title', :resource => @user.email , :default => "Edit #{@user.email}") %></h4>
+  </div>
+  <div class="panel-body">
+    <%= form_for(@user) do |f| %>
+      <div class="form-group">
+        <%= f.label :email %>
+        <%= f.email_field :email, autofocus: true, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :password %> <i>(<%= t('.leave_blank_if_you_don_t_want_to_change_it', :default => "deixar em branco se nao quiser troca-lo") %>)</i><br />
+
+        <%= f.password_field :password, :autocomplete => "off", class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, class: "form-control"  %>
+      </div>
+      <div class="form-group">
+        <%= f.label :current_password %> <i>(<%= t('.we_need_your_current_password_to_confirm_your_changes', :default => 'we need your current password to confirm your changes') %>)</i>
+        <%= f.password_field :current_password, class: "form-control" %>
+      </div>
+      <%= f.submit t('.update', :default => "Update"), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to t('.back', :default => 'Back'), :back %>
+
+
+
+
+
+<!--<h3>Cadastro > Cidadao:  #<%= @user.email%></h3>
+
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>E-mail</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td><h4><%= @user.email%></h4></td>
+
+          </tr>
+      </tbody>
+    </table>
+
+
+<div class="media">
+  <div class="media-body">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>RG</th>
+          <th>CPF</th>
+          <th>Celular</th>
+          <th>Endereco</th>          
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td> NOME </td>
+            <td> 123.456.789</td>
+            <td> 987.543.210-00 </td>
+            <td> 11 999999999</td>
+            <td> Rua dali, 70</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+ 
+<br>
+
+<%= link_to 'Voltar', users_path %>
+-->
+
+
+
+

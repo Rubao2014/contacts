@@ -13,8 +13,8 @@ gem 'uglifier', '>= 1.3.0'
 
 
 # Use CoffeeScript for .coffee assets and views
-#gem 'coffee-rails', '~> 4.1.0'
-gem 'coffee-script-source', '1.8.0'
+gem 'coffee-rails'
+#gem 'coffee-script-source', '1.8.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -55,6 +55,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   
   gem 'capistrano'
+  gem 'capistrano-env-config'
   gem 'capistrano3-puma'
   gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false

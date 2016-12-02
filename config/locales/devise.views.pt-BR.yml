@@ -61,8 +61,8 @@ pt-BR:
     sessions:
       new:
         sign_in: Login
-      signed_in: "Logou-se no sistema."
-      signed_out: "Saiu do sistema."
+      signed_in: "Ola! Seja bem-vindo novamente!"
+      signed_out: "Deslogado. Ate logo!"
       already_signed_out: "Ja saiu do sistema ."
     shared:
       links:

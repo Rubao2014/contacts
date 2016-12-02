@@ -1,0 +1,97 @@
+
+<div class="panel panel-default devise-bs">
+  <div class="panel-heading">
+    <h4><%= t('.title', :resource => @user.email , :default => "Perfil de #{@user.email}") %></h4>
+  </div>
+  <div class="panel-body">
+
+    <table class="table table-hover">
+      <thead>
+ 
+      </thead>
+      <tbody>
+          <tr>
+            <td><h4>Nome:</h4></td>
+            <td><h4> Teste </h4></td>
+          </tr>      
+          <tr>
+            <td><h4>E-mail</h4></td>
+            <td><h4><%= @user.email%></h4></td>
+          </tr>
+          <tr>
+            <td><h4>RG</h4></td>
+            <td><h4>123.456.78</h4></td>
+          </tr>
+          <tr>
+            <td><h4>CPF</h4></td>
+            <td><h4>987.543.210-00</h4></td>
+          </tr>
+          <tr>
+            <td><h4>Numero do celular:</h4></td>
+            <td><h4>11 999999999</h4></td>
+          </tr>
+          <tr>
+            <td><h4>Endereco</h4></td>
+            <td><h4>Rua dali, 70</h4></td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%= link_to 'Editar', edit_user_path(@user) %> |
+<%= link_to t('.back', :default => 'Back'), :back %>
+
+
+<!--<h3>Cadastro > Cidadao:  #<%= @user.email%></h3>
+
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>E-mail</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td><h4><%= @user.email%></h4></td>
+
+          </tr>
+      </tbody>
+    </table>
+
+
+<div class="media">
+  <div class="media-body">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>RG</th>
+          <th>CPF</th>
+          <th>Celular</th>
+          <th>Endereco</th>          
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td> NOME </td>
+            <td> 123.456.789</td>
+            <td> 987.543.210-00 </td>
+            <td> 11 999999999</td>
+            <td> Rua dali, 70</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+ 
+<br>
+
+<%= link_to 'Voltar', users_path %>
+-->
+
+
+
+

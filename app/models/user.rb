@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  attr_accessor :password, :password_confirmation
+  attr_accessor :password, :password_confirmation, :commit
   before_create :create_ldap_user
   before_update :update_ldap_password
 
@@ -32,7 +32,7 @@ class User < ActiveRecord::Base
 
 	def update_ldap_password
 
-		if(password.present? && password_confirmation.present?)
+		if(password.present? && password_confirmation.present? && (commit.casecmp "Sign up"))
 			#dn = "#{self.email},OU=User,DC=gpmonline,DC=br"
 			#attrs = { userPassword: self.password}
 			#ldap = Devise::LDAP::Connection.admin

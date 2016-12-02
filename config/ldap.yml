@@ -22,7 +22,7 @@ authorizations: &AUTHORIZATIONS
 ## Environment
 
 development:
-  host: gateway.gpmonline.com.br
+  host: cadir.gpm.solutions
   port: 10389
   attribute: cn
   base: ou=User,dc=gpmonline,dc=br
@@ -33,7 +33,7 @@ development:
   # <<: *AUTHORIZATIONS
 
 test:
-  host: gateway.gpmonline.com.br
+  host: cadir.gpm.solutions
   port: 10389
   attribute: cn
   base: ou=User,dc=gpmonline,dc=br
@@ -44,7 +44,7 @@ test:
   # <<: *AUTHORIZATIONS
 
 production:
-  host: gateway.gpmonline.com.br
+  host: cadir.gpm.solutions
   port: 10389
   attribute: cn
   base: ou=User,dc=gpmonline,dc=br
