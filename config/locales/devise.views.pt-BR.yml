@@ -1,4 +1,14 @@
 pt-BR:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              taken: E-mail já existente em nosso cadastro. Favor selecionar outro e-mail, ou caso seja o proprietário, solicite resgate de senha.
+            password:
+              blank: Senha esta vazia.
+
   devise:
     confirmations:
       new:
